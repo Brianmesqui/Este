@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ccee66;
+    color:white;
+    padding: 20px 160px; /* padding 1 px)Em cima e baixo, 2 px)dos lados*/
+    height: 100vh;/* altura*/
+    overflow: hidden; /*oque sobra*/
+    
+    font-family: "Noto Sans", sans-serif;
+}
+
+body::before{
+    content: ''; /*Conteudo*/
+    background: #181818 ;
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    top: 0;
+    left: -650px; /*'em' parente do pixel'*/
+    transform: rotate(-70deg);
+
+}
+
+body::after{
+    content: 'Nike';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(0, 0, 0) ;
+    font-size: 250px;
+    font-weight:bold ; /*grossura da fonte*/
+    z-index: 2;
+    opacity: 0.5; /*Deixar opaco*/
+}
+
+.logo{
+    width: 80px; /*largura*/ 
+    z-index: 10;
+}
+
+   
+
+.imagem-tenis{
+    width: 800px;
+    transform: rotate(-25deg);
+    transition: 1;
+    transition: 1s;
+    z-index: 3;
+
+}
+.imagem-tenis:hover{
+    opacity: 0.5;
+}
+
+h1{
+    font-size: 80px;
+}
+h4{
+    font-size: 60px;
+}
+p{
+    font-size: 16;
+    margin-bottom: 40px;
+}
+
+.botão_carrinho{
+    background: #a3be52;
+    padding: 10px 20px;
+    border-radius: 20px;/*arrendondar as bordas*/
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.botão_carrinho:hover{
+    opacity: 0.5;
+}
+
+.caixa-logo{
+    width: 80px;
+    z-index:10 ;
+    position: absolute;
+}
+
+.caixa-principal{
+    display: flex; /*habilita poderes*/
+    justify-content: space-between; /*justifica o conteudo "alinhando"*/
+    align-items: center; /*alinha vertical*/
+    height: 75%;
+    position: relative; /*habilita z-index*/
+    z-index: 1;  /**/
+}
+
+.caixa-texto{
+    max-width: 450px; /*largura maxima*/
+}
+
+.caixa-botoes {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.botoes {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.botoes:active {
+    opacity: 0.6;
+}
+
+.verde {
+    background: #ccee66;
+}
+
+.azul {
+    background: #58cced;
+}
+
+.rosa {
+    background: #ff9eb5;
+}
